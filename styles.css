@@ -75,6 +75,7 @@ ul {
     background-color: var(--dark-grey);
     color: var(--light-grey);
     border-radius: 50%;
+    transition: 0.3s;
     
 }
 
@@ -98,6 +99,8 @@ ul {
     padding: 0.625rem 0 0.625rem;
     border-radius: 1.25rem;
     color: var(--white);
+    letter-spacing: 0.1rem;
+    transition: 0.3s;
 }
 
 .submit-btn:hover {
