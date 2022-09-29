@@ -66,6 +66,7 @@ body {
     width: 50px;
     background-color: var(--dark-blue);
     border-radius: 50%;
+
 }
 
 .scale h2 {
@@ -74,8 +75,14 @@ body {
     text-align: center;
 }
 
+.scale div:hover, h2:hover {
+    cursor: pointer;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
 .button-submit {
-    background-color: var(--white);
+    background-color: var(--orange);
     display: flex;
     justify-content: center;
     border-radius: 1.25rem;
@@ -86,8 +93,13 @@ body {
 .button-submit button {
     font-family: 'Outfit', sans-serif;
     font-size: 15px;
-    color: var(--orange);
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--orange);
     border: none;
-    
+}
+
+.button-submit:hover button:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--orange);
 }
