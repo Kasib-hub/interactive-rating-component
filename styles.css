@@ -57,6 +57,7 @@ p {
     line-height: 1.5;
 }
 
+/* formatting the style of the rating */
 ul {
     list-style-type: none;
     display: flex;
@@ -71,6 +72,7 @@ ul {
     margin: 2rem 0 2rem;
     padding: 0.75rem;
     font-size: 16px;
+    font-weight: 700;
     border: none;
     background-color: var(--dark-grey);
     color: var(--light-grey);
@@ -98,6 +100,7 @@ ul {
     border: none;
     padding: 0.625rem 0 0.625rem;
     border-radius: 1.25rem;
+    font-weight: 700;
     color: var(--white);
     letter-spacing: 0.1rem;
     transition: 0.3s;
@@ -108,4 +111,40 @@ ul {
     background-color: var(--white);
     color: var(--orange);
 }
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* accessing the nested p element within thank you div */
+.thank-you p.gray {
+    background-color: var(--dark-grey);
+    border-radius: 1.25rem;
+    color: var(--orange);
+    padding: 0.25rem 0.75rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* since the other p tag had a class, the general p is accesed like this */
+.thank-you p {
+    margin-bottom: 1.5rem;
+}
+
+/* this ends up centering the img because of auto on left and right bottom */
+.thank-you img {
+    display: block;
+    margin: 0 auto 2rem;
+}
+
+/* I added the hidden class on top of the thank you class and set to hidden so its on by default */
+.hidden {
+    display: none;
+}
+
+
 

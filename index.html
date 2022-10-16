@@ -27,19 +27,21 @@
             <li><button class="btn">5</button></li>
         </ul>
         
-        <button type="submit" onclick="feedback()" class="submit-btn">SUBMIT</button>
+        <button type="submit" class="submit-btn" id="submit">SUBMIT</button>
         
         
     </div>
 
     <!-- Using another class of div to make the transistion to thank you page -->
-    <div class="thank-you">
+    <div class="thank-you hidden">
         <img src="/images/illustration-thank-you.svg" alt="phone art">
-        <p>You selected * out of five</p>
+        <!-- span tag used to dynamically change the rating on selection -->
+        <p class="gray">You selected <span id="rating">5</span> out of 5</p>
         <h1>Thank you!</h1>
         <p>
             We appreciate you taking the time to give a rating. If you ever need more support, don't hesistate to get in touch!
         </p>
+        <button type="submit" id="rate-again" class="submit-btn">RATE AGAIN</button>
     </div>
 
 
